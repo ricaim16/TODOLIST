@@ -1,0 +1,113 @@
+body {
+	/* background-color: #ffcc66; */
+	/* margin: 20px auto; */
+    /* position: relative;
+    height: 100vh; */
+}
+
+.todo-container {
+	max-width: 500px;
+	margin: 20px auto;
+	padding: 20px;
+	/* border: 3px solid #ccc; */
+	/* border-radius: 15px; */
+	background-color: #4b4848;
+	box-shadow: 3 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+	color: #ffcc66;
+}
+
+.input-section {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+/* flex 1 senelew mulu yaregewal input field */
+.input-field {
+	flex: 1;
+	padding: 10px 8px;
+	margin-right: 10px;
+	border-radius: 5px;
+    font-size: 18px;
+	/* border: 1px solid #ffcc66; */
+}
+
+.add-btn,
+.update-btn,
+.cancel-btn {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ffcc66;
+	color: black;
+	transition: all 200ms ease-in;
+}
+.update-btn,
+.cancel-btn {
+	font-size: 20px;
+    margin-right: 10px;
+}
+.add-btn:hover,
+.update-btn:hover,
+.cancel-btn:hover {
+	background-color: #000000;
+	color: #ffcc66;
+	cursor: pointer;
+	/* border: 1px solid #ffcc66; */
+}
+
+.todo-list {
+	list-style: none;
+	padding: 0;
+}
+
+.todo-list li {
+	margin-bottom: 8px;
+	padding: 4px;
+	border-radius: 5px;
+	border: 1px solid #ffcc66;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 1 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list li.completed {
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+
+.btn-group button {
+	margin-left: 0.5rem;
+	padding: 5px 5px;
+	cursor: pointer;
+	font-size: 20px;
+	/* border-radius: 10px 0 10px 0; */
+	/* background-color: inherit; */
+	/* font-weight: 400px; */
+}
+
+.btn-edit:hover {
+	background-color: rgb(4, 248, 4);
+	color: white;
+	border: none;
+}
+.btn-remove:hover {
+	background-color: rgb(248, 4, 37);
+	color: white;
+	border: none;
+}
+.btn-done:hover {
+	background-color: rgb(248, 224, 4);
+	color: white;
+	border: none;
+}
+
+.btn-group button:hover {
+	opacity: 0.8;
+}
